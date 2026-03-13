@@ -6,15 +6,15 @@ using namespace std;
 int main()
 {
     double a, b, c;
-    double root1 , root2;
+    
     // TODO
     cin >> a >> b >> c; 
    // quadratic (-b +- sqrt(b * b - 4 * a * c)) / (2 * a)
 
-    root1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
+    double root1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
 
-    root2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
-    
+    double root2 = (-b - sqrt(b*b - 4*a*c)) / (2*a);
+
     cout << setprecision(2) << fixed;
     // TODO
     if (root1 > root2) {
