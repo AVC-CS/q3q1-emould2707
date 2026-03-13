@@ -6,16 +6,22 @@ using namespace std;
 int main()
 {
     double a, b, c;
-    
-    // TODO
+
     cin >> a >> b >> c; 
    // quadratic (-b +- sqrt(b * b - 4 * a * c)) / (2 * a)
 
-    double root1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
+    
+    
+    cout << setprecision(2) << fixed;
+    if (a == 0){
+        cout << "value cant = 0" << endl;
+        double root = -c / b;
+        cout << root << " " << root;
+    }
 
+    double root1 = (-b + sqrt(b*b - 4*a*c)) / (2*a);
     double root2 = (-b - sqrt(b*b - 4*a*c)) / (2*a);
 
-    cout << setprecision(2) << fixed;
     // TODO
     if (root1 > root2) {
         cout << root1 << " " << root2;
