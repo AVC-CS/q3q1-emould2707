@@ -12,7 +12,7 @@ int main()
    // quadratic (-b +- sqrt(b * b - 4 * a * c)) / (2 * a)
     // TODO
     root1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
-    
+
     root2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
     // TODO
     // TODO
@@ -22,6 +22,11 @@ int main()
 
     cout << setprecision(2) << fixed;
     // TODO
-    cout << a , b , c;
+    if (root1 > root2) {
+        cout << root1 << " " << root2;
+    } else {
+        cout << root2 << " " << root1;
+    }
+    // figuring out which one is larger and printing it first.
     return 0;
 }
