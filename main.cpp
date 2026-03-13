@@ -10,16 +10,11 @@ int main()
     // TODO
     cin >> a >> b >> c; 
    // quadratic (-b +- sqrt(b * b - 4 * a * c)) / (2 * a)
-    // TODO
+
     root1 = (-b + sqrt(b * b - 4 * a * c)) / (2 * a);
 
     root2 = (-b - sqrt(b * b - 4 * a * c)) / (2 * a);
-    // TODO
-    // TODO
-
-    // TODO
-    // TODO
-
+    
     cout << setprecision(2) << fixed;
     // TODO
     if (root1 > root2) {
